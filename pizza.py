@@ -78,7 +78,7 @@ def Write(outputFile, totalSlices, sliceData):
     with open(outputFile, 'w') as outFile:
         outFile.write(str(totalSlices)+'\n')
         for pizzaSlice in sliceData:
-            outFile.write(' '.join('%s' %(ind for ind in pizzaSlice)+'\n'))
+            outFile.write(' '.join('%s ' %ind for ind in pizzaSlice)+'\n')
 
 def cutPizza(pizzaData):
     print(pizzaData)
